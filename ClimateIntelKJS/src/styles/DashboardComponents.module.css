@@ -1,0 +1,309 @@
+/* =====================================================
+   DASHBOARD COMPONENTS - CSS MODULE
+   
+   Styles for reusable dashboard components
+   Scoped to prevent conflicts with other styles
+===================================================== */
+
+/* ===== TEMPERATURE CARD ===== */
+.temperatureCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.temperatureCard:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tempHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tempHeader h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.riskBadge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.tempDisplay {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.mainTemp {
+  flex: 1;
+}
+
+.tempValue {
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.tempUnit {
+  display: block;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.feelsLike {
+  background: #f1f5f9;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feelsLike p {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.feelsValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 4px !important;
+}
+
+.tempIndicator {
+  height: 4px;
+  border-radius: 2px;
+}
+
+/* ===== PREDICTION CARD ===== */
+.predictionCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.predictionCard:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.predHeader {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.predIcon {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.predHeader h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+}
+
+.predConfidence {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.predValue {
+  margin-bottom: 12px;
+}
+
+.predValue p {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.predDescription {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.confidenceBar {
+  height: 6px;
+  background: #f1f5f9;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.confidenceFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* ===== RISK LEVEL INDICATOR ===== */
+.riskIndicator {
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.riskIndicator:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.riskHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.riskIcon {
+  font-size: 28px;
+}
+
+.riskHeader h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.riskDesc {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0 0 12px 0;
+}
+
+.affectedPeople {
+  font-size: 12px;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.riskMeter {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.riskFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.riskTemp {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ===== CLIMATE METRIC ===== */
+.climateMetric {
+  background: white;
+  border-left: 4px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+}
+
+.climateMetric:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.metricTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.metricIcon {
+  font-size: 20px;
+}
+
+.metricTop h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metricValue {
+  margin-bottom: 12px;
+}
+
+.metricValue p {
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.metricValue strong {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.metricTrend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metricTrend span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.trendText {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .tempDisplay {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tempValue {
+    font-size: 28px;
+  }
+
+  .predictionCard {
+    padding: 16px;
+  }
+
+  .riskIndicator {
+    padding: 16px;
+  }
+}
